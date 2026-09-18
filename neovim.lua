@@ -1,19 +1,20 @@
 -- Windows 3 — self-contained Neovim colorscheme
--- TypeSafe AI / Windows 3.1. Works without extra plugins.
+-- TypeSafe AI / Windows 3.1 VGA navy. Works without extra plugins.
 
 local colors = {
 	bg = "#fefefe",
 	fg = "#1e1e1e",
 	muted = "#858585",
-	dark = "#ffe4f0",
+	dark = "#e8e8f0",
 	border = "#1e1e1e",
-	selection = "#d45bb6",
-	pink = "#ff80c0",
+	selection = "#000080",
 	navy = "#000080",
+	blue = "#0000ff",
 	teal = "#09aea1",
 	green = "#03aa5c",
-	red = "#c45c78",
+	red = "#800000",
 	yellow = "#c9a227",
+	magenta = "#800080",
 	silver = "#c0c0c0",
 	sage = "#abbab9",
 	white = "#fefefe",
@@ -61,11 +62,11 @@ return {
 
 				set_hl("StatusLine", { fg = colors.white, bg = colors.navy, bold = true })
 				set_hl("StatusLineNC", { fg = colors.fg, bg = colors.silver })
-				set_hl("WinBar", { fg = colors.fg, bg = colors.pink })
-				set_hl("WinBarNC", { fg = colors.muted, bg = colors.pink })
+				set_hl("WinBar", { fg = colors.white, bg = colors.navy })
+				set_hl("WinBarNC", { fg = colors.silver, bg = colors.navy })
 
 				set_hl("TabLine", { fg = colors.fg, bg = colors.silver })
-				set_hl("TabLineFill", { bg = colors.pink })
+				set_hl("TabLineFill", { bg = colors.navy })
 				set_hl("TabLineSel", { fg = colors.white, bg = colors.navy, bold = true })
 
 				set_hl("Pmenu", { fg = colors.fg, bg = colors.silver })
@@ -73,12 +74,12 @@ return {
 				set_hl("PmenuSbar", { bg = colors.sage })
 				set_hl("PmenuThumb", { bg = colors.navy })
 
-				set_hl("Constant", { fg = colors.selection })
+				set_hl("Constant", { fg = colors.magenta })
 				set_hl("String", { fg = colors.green })
 				set_hl("Character", { fg = colors.green })
-				set_hl("Number", { fg = colors.selection })
+				set_hl("Number", { fg = colors.magenta })
 				set_hl("Boolean", { fg = colors.navy, bold = true })
-				set_hl("Float", { fg = colors.selection })
+				set_hl("Float", { fg = colors.magenta })
 
 				set_hl("Identifier", { fg = colors.fg })
 				set_hl("Function", { fg = colors.navy, bold = true })
@@ -95,7 +96,7 @@ return {
 				set_hl("Structure", { fg = colors.green })
 				set_hl("Typedef", { fg = colors.green })
 
-				set_hl("PreProc", { fg = colors.pink })
+				set_hl("PreProc", { fg = colors.blue })
 				set_hl("Include", { fg = colors.navy })
 				set_hl("Define", { fg = colors.navy })
 				set_hl("Macro", { fg = colors.yellow })
@@ -108,7 +109,7 @@ return {
 				set_hl("DiffAdd", { fg = colors.green, bg = colors.dark })
 				set_hl("DiffChange", { fg = colors.yellow, bg = colors.dark })
 				set_hl("DiffDelete", { fg = colors.red, bg = colors.dark })
-				set_hl("DiffText", { fg = colors.navy, bg = colors.pink })
+				set_hl("DiffText", { fg = colors.white, bg = colors.navy })
 
 				set_hl("DiagnosticError", { fg = colors.red })
 				set_hl("DiagnosticWarn", { fg = colors.yellow })

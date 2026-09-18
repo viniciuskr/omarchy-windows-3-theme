@@ -4,7 +4,7 @@
 @define-color border #1e1e1e;
 @define-color foreground #1e1e1e;
 @define-color background #c0c0c0;
-@define-color accent #09aea1;
+@define-color accent #000080;
 
 window .box-wrapper {
   background: @background;
@@ -42,7 +42,7 @@ child {
 }
 
 child:hover {
-  background: #09aea1;
+  background: #0000ff;
   color: #fefefe;
 }
 

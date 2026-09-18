@@ -1,22 +1,22 @@
     @define-color background     #fefefe;
     @define-color foreground     #1e1e1e;
     @define-color black          #1e1e1e;
-    @define-color red            #c45c78;
+    @define-color red            #800000;
     @define-color green          #03aa5c;
     @define-color yellow         #c9a227;
     @define-color blue           #000080;
-    @define-color magenta        #d45bb6;
+    @define-color magenta        #800080;
     @define-color cyan           #09aea1;
     @define-color white          #fefefe;
     @define-color bright_black   #858585;
-    @define-color bright_red     #ff80c0;
+    @define-color bright_red     #ff0000;
     @define-color bright_green   #14c46e;
     @define-color bright_yellow  #e0c04a;
-    @define-color bright_blue    #1e1e9a;
-    @define-color bright_magenta #e070c4;
+    @define-color bright_blue    #0000ff;
+    @define-color bright_magenta #ff00ff;
     @define-color bright_cyan    #1bc4b6;
     @define-color bright_white   #ffffff;
-    @define-color pink           #ff80c0;
+    @define-color navy           #000080;
     @define-color silver         #c0c0c0;
 
     @define-color accent_bg_color @cyan;
@@ -132,7 +132,8 @@
         border-left-color: #808080;
         border-bottom-color: #ffffff;
         border-right-color: #ffffff;
-        background-color: @pink;
+        background-color: @navy;
+        color: @white;
     }
 
     entry, textview, .view {
@@ -147,7 +148,7 @@
     }
 
     selection {
-        background-color: @magenta;
+        background-color: @navy;
         color: @white;
     }
 

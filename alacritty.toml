@@ -1,6 +1,6 @@
 # ────────────────────────────────────────────────────────────
 # Omarchy Windows 3 — Alacritty
-# TypeSafe AI / Windows 3.1
+# Windows 3.1 VGA palette
 # ────────────────────────────────────────────────────────────
 
 [window]
@@ -17,28 +17,28 @@ background = "#fefefe"
 
 [colors.selection]
 text = "#fefefe"
-background = "#d45bb6"
+background = "#000080"
 
 [colors.cursor]
 text = "#fefefe"
-cursor = "#1e1e1e"
+cursor = "#000080"
 
 [colors.normal]
-black   = "#1e1e1e"
-red     = "#c45c78"
-green   = "#03aa5c"
-yellow  = "#c9a227"
+black   = "#000000"
+red     = "#800000"
+green   = "#008000"
+yellow  = "#808000"
 blue    = "#000080"
-magenta = "#d45bb6"
-cyan    = "#09aea1"
+magenta = "#800080"
+cyan    = "#008080"
 white   = "#c0c0c0"
 
 [colors.bright]
-black   = "#858585"
-red     = "#ff80c0"
-green   = "#14c46e"
-yellow  = "#e0c04a"
-blue    = "#1e1e9a"
-magenta = "#e070c4"
-cyan    = "#1bc4b6"
-white   = "#1e1e1e"
+black   = "#808080"
+red     = "#ff0000"
+green   = "#00ff00"
+yellow  = "#ffff00"
+blue    = "#0000ff"
+magenta = "#ff00ff"
+cyan    = "#00ffff"
+white   = "#ffffff"

@@ -1,18 +1,18 @@
 # Windows 3 — Omarchy shell
-# TypeSafe pink chrome, Win31 square cards, magenta selection.
+# Navy title-bar chrome, Win31 square silver cards.
 
 [bar]
-background = "#ff80c0"
+background = "#000080"
 background-alpha = 1.0
-text = "#1e1e1e"
-active = "#d45bb6"
+text = "#fefefe"
+active = "#0000ff"
 scale-with-font = true
 size-horizontal = 28
 size-vertical = 30
 
 [hyprland]
-active-border = "#1e1e1e"
-active-border-foreground = "#1e1e1e"
+active-border = "#000080"
+active-border-foreground = "#000080"
 
 [controls]
 normal-color = "#1e1e1e"
@@ -23,19 +23,19 @@ normal-border-alpha = 1.0
 
 hover-cursor-color = "#1e1e1e"
 hover-cursor-fill-alpha = 0.16
-hover-cursor-border = "#09aea1"
+hover-cursor-border = "#000080"
 hover-cursor-border-width = 2
 hover-cursor-border-alpha = 1.0
 
 focus-color = "#1e1e1e"
 focus-fill-alpha = 0.16
-focus-border = "#09aea1"
+focus-border = "#000080"
 focus-border-width = 2
 focus-border-alpha = 1.0
 
 selected-color = "#fefefe"
 selected-fill-alpha = 1.0
-selected-border = "#1e1e1e"
+selected-border = "#000080"
 selected-border-width = 2
 selected-border-alpha = 1.0
 
@@ -53,7 +53,7 @@ base-size = 12
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
-border = "#1e1e1e"
+border = "#000080"
 border-alpha = 1.0
 border-width = 2
 
@@ -61,78 +61,78 @@ border-width = 2
 background = "#ffffc0"
 background-alpha = 1.0
 text = "#1e1e1e"
-border = "#1e1e1e"
+border = "#000080"
 border-alpha = 1.0
 
 [notifications]
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
-border = "#1e1e1e"
+border = "#000080"
 border-alpha = 1.0
 border-width = 2
-countdown = "#09aea1"
+countdown = "#000080"
 
 [launcher]
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
-border = "#1e1e1e"
+border = "#000080"
 border-alpha = 1.0
 border-width = 3
-scrim = "#ff80c0"
+scrim = "#000080"
 scrim-alpha = 0.45
-selected-background = "#d45bb6"
+selected-background = "#000080"
 selected-background-alpha = 1.0
 selected-text = "#fefefe"
-selected-border = "#1e1e1e"
+selected-border = "#000080"
 selected-border-alpha = 1.0
 
 [menu]
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
-border = "#1e1e1e"
+border = "#000080"
 border-alpha = 1.0
 border-width = 3
-scrim = "#ff80c0"
+scrim = "#000080"
 scrim-alpha = 0.45
 selected-background = "#000080"
 selected-background-alpha = 1.0
 selected-text = "#fefefe"
-selected-border = "#1e1e1e"
+selected-border = "#000080"
 selected-border-alpha = 1.0
 
 [polkit]
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
-text-error = "#c45c78"
-border = "#1e1e1e"
-border-error = "#c45c78"
+text-error = "#ff0000"
+border = "#000080"
+border-error = "#ff0000"
 border-alpha = 1.0
-scrim = "#ff80c0"
+scrim = "#000080"
 scrim-alpha = 0.5
-accent = "#09aea1"
+accent = "#000080"
 
 [lock]
 background = "#c0c0c0"
 background-alpha = 1.0
 text = "#1e1e1e"
 placeholder = "#858585"
-text-error = "#c45c78"
-border = "#1e1e1e"
-border-active = "#09aea1"
-border-error = "#c45c78"
+text-error = "#ff0000"
+border = "#000080"
+border-active = "#0000ff"
+border-error = "#ff0000"
 border-alpha = 1.0
-selection = "#d45bb6"
+selection = "#000080"
 selection-alpha = 1.0
 
 [image-picker]
-scrim = "#ff80c0"
+scrim = "#000080"
 scrim-alpha = 0.55
-text = "#1e1e1e"
-selected-border = "#1e1e1e"
+text = "#fefefe"
+selected-border = "#c0c0c0"
 selected-border-alpha = 1.0
 unselected-border = "#808080"
 unselected-border-alpha = 1.0

@@ -10,17 +10,17 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 BG = ROOT / "backgrounds"
 
-PINK = (255, 128, 192)  # Windows 3.1 system pink #ff80c0
 WHITE = (254, 254, 254)
 NEAR_WHITE = (255, 255, 255)
 DARK = (30, 30, 30)
-MAGENTA = (212, 91, 182)
+MAGENTA = (128, 0, 128)  # VGA magenta #800080
 TEAL = (9, 174, 161)
 GREEN = (3, 170, 92)
 SAGE = (171, 186, 185)
 GRAY = (222, 222, 222)
 MID = (133, 133, 133)
-NAVY = (0, 0, 128)
+NAVY = (0, 0, 128)  # Windows 3.1 title-bar navy #000080
+BLUE = (0, 0, 255)
 SILVER = (192, 192, 192)
 DARKGRAY = (128, 128, 128)
 BLACK = (0, 0, 0)
@@ -174,11 +174,10 @@ def win31_window(
         )
 
 
-def wallpaper_typesafe_desktop() -> Image.Image:
-    img = Image.new("RGB", (W, H), PINK)
-    # Subtle VGA-style dither toward a slightly deeper pink.
-    overlay = dither((W, H), PINK, (192, 64, 128), scale=2)
-    return Image.blend(img, overlay, 0.18)
+def wallpaper_navy_desktop() -> Image.Image:
+    img = Image.new("RGB", (W, H), NAVY)
+    overlay = dither((W, H), NAVY, (0, 0, 96), scale=2)
+    return Image.blend(img, overlay, 0.22)
 
 
 def wallpaper_win31_teal() -> Image.Image:
@@ -186,7 +185,7 @@ def wallpaper_win31_teal() -> Image.Image:
 
 
 def wallpaper_program_manager() -> Image.Image:
-    img = wallpaper_typesafe_desktop()
+    img = wallpaper_navy_desktop()
     win31_window(
         img,
         (180, 140, 820, 620),
@@ -233,12 +232,12 @@ def wallpaper_program_manager() -> Image.Image:
 
 
 def wallpaper_tiles() -> Image.Image:
-    # Classic Win3.1 "Squares" using TypeSafe pink / magenta / teal.
+    # Classic Win3.1 "Squares" using VGA navy / blue / teal.
     cell = 16
     src_w, src_h = W // 2, H // 2
-    img = Image.new("RGB", (src_w, src_h), PINK)
+    img = Image.new("RGB", (src_w, src_h), NAVY)
     draw = ImageDraw.Draw(img)
-    colors = [PINK, MAGENTA, TEAL, SAGE, SILVER]
+    colors = [NAVY, BLUE, TEAL, SAGE, SILVER]
     i = 0
     for y in range(0, src_h, cell):
         for x in range(0, src_w, cell):
@@ -249,7 +248,7 @@ def wallpaper_tiles() -> Image.Image:
 
 
 def wallpaper_argyle() -> Image.Image:
-    img = Image.new("RGB", (W // 2, H // 2), PINK)
+    img = Image.new("RGB", (W // 2, H // 2), NAVY)
     draw = ImageDraw.Draw(img)
     w, h = img.size
     step = 48
@@ -261,7 +260,7 @@ def wallpaper_argyle() -> Image.Image:
                 (x + step, y + step // 2),
                 (x + step // 2, y + step),
             ]
-            color = TEAL if ((x + y) // step) % 2 == 0 else MAGENTA
+            color = TEAL if ((x + y) // step) % 2 == 0 else BLUE
             draw.polygon(diamond, fill=color, outline=DARK)
     return img.resize((W, H), Image.NEAREST)
 
@@ -281,28 +280,28 @@ def wallpaper_navy_dots() -> Image.Image:
     for y in range(h):
         for x in range(w):
             if x % 8 == 0 and y % 8 == 0:
-                px[x, y] = PINK
+                px[x, y] = SILVER
             elif x % 8 == 4 and y % 8 == 4:
                 px[x, y] = TEAL
     return img.resize((W, H), Image.NEAREST)
 
 
 def wallpaper_bricks() -> Image.Image:
-    return bricks((W, H), PINK, DARK, bw=28, bh=14)
+    return bricks((W, H), NAVY, SILVER, bw=28, bh=14)
 
 
 def make_preview() -> Image.Image:
     """Theme-switcher preview: a composed Win31 desktop."""
     pw, ph = 1440, 900
-    desktop = wallpaper_typesafe_desktop().resize((pw, ph), Image.NEAREST)
+    desktop = wallpaper_navy_desktop().resize((pw, ph), Image.NEAREST)
     img = desktop.copy()
     draw = ImageDraw.Draw(img)
 
-    # Waybar as a pink title strip.
-    draw.rectangle([0, 0, pw, 36], fill=PINK)
-    draw.line([(0, 36), (pw, 36)], fill=DARK, width=2)
-    draw.text((14, 8), "Omarchy   1  2  3  4  5", fill=DARK, font=pixel_font(16))
-    draw.text((pw - 280, 8), "Fri 13:31    100%    12:00", fill=DARK, font=pixel_font(16))
+    # Waybar as a navy Program Manager strip.
+    draw.rectangle([0, 0, pw, 36], fill=NAVY)
+    draw.line([(0, 36), (pw, 36)], fill=BLACK, width=2)
+    draw.text((14, 8), "Omarchy   1  2  3  4  5", fill=WHITE, font=pixel_font(16))
+    draw.text((pw - 280, 8), "Fri 13:31    100%    12:00", fill=WHITE, font=pixel_font(16))
 
     win31_window(
         img,
@@ -324,15 +323,15 @@ def make_preview() -> Image.Image:
         client_fill=WHITE,
     )
     # Inner typesafe content
-    draw.rectangle([568, 190, 1352, 772], fill=PINK)
-    draw.text((600, 230), "We took the opposite", fill=DARK, font=font(36, bold=True))
-    draw.text((600, 276), "research direction", fill=DARK, font=font(36, bold=True))
-    draw.rectangle([600, 360, 780, 392], fill=MAGENTA)
+    draw.rectangle([568, 190, 1352, 772], fill=NAVY)
+    draw.text((600, 230), "We took the opposite", fill=WHITE, font=font(36, bold=True))
+    draw.text((600, 276), "research direction", fill=WHITE, font=font(36, bold=True))
+    draw.rectangle([600, 360, 780, 392], fill=BLUE)
     draw.text((612, 366), "not chat", fill=WHITE, font=pixel_font(16))
     draw.text(
         (600, 420),
         "Typed outputs. Calibrated confidence.\nMore like code.",
-        fill=DARK,
+        fill=WHITE,
         font=pixel_font(18),
         spacing=8,
     )
@@ -343,18 +342,18 @@ def make_preview() -> Image.Image:
 
     # Palette swatches
     swatches = [
-        ("pink", PINK),
+        ("navy", NAVY),
+        ("blue", BLUE),
         ("teal", TEAL),
         ("magenta", MAGENTA),
-        ("navy", NAVY),
-        ("sage", SAGE),
+        ("silver", SILVER),
         ("green", GREEN),
     ]
     x = 90
     y = 800
     for name, color in swatches:
         draw.rectangle([x, y, x + 70, y + 40], fill=color, outline=BLACK)
-        draw.text((x, y + 44), name, fill=DARK, font=pixel_font(11))
+        draw.text((x, y + 44), name, fill=WHITE, font=pixel_font(11))
         x += 90
 
     return img
@@ -375,7 +374,7 @@ def make_unlock() -> Image.Image:
 
 
 def make_preview_unlock() -> Image.Image:
-    img = wallpaper_typesafe_desktop().resize((800, 500), Image.NEAREST)
+    img = wallpaper_navy_desktop().resize((800, 500), Image.NEAREST)
     win31_window(img, (180, 90, 620, 380), "Omarchy", content="\n\n     Enter password\n\n     [ ************  ]\n\n         [ OK ]")
     return img
 
@@ -392,7 +391,7 @@ def main() -> None:
     BG.mkdir(parents=True, exist_ok=True)
 
     assets = {
-        "01-typesafe-desktop.jpg": wallpaper_typesafe_desktop(),
+        "01-navy-desktop.jpg": wallpaper_navy_desktop(),
         "02-program-manager.jpg": wallpaper_program_manager(),
         "03-win31-teal.jpg": wallpaper_win31_teal(),
         "04-typesafe-tiles.jpg": wallpaper_tiles(),
@@ -400,7 +399,7 @@ def main() -> None:
         "06-sage-weave.jpg": wallpaper_sage_weave(),
         "07-hot-magenta.jpg": wallpaper_hot_magenta(),
         "08-navy-dots.jpg": wallpaper_navy_dots(),
-        "09-pink-bricks.jpg": wallpaper_bricks(),
+        "09-navy-bricks.jpg": wallpaper_bricks(),
     }
     for name, image in assets.items():
         save_jpeg(image, BG / name)

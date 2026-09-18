@@ -1,9 +1,9 @@
-@define-color foreground #1e1e1e;
-@define-color background #ff80c0;
-@define-color accent #09aea1;
-@define-color accent_orange #d45bb6;
-@define-color accent_green #03aa5c;
-@define-color accent_critical #c45c78;
+@define-color foreground #fefefe;
+@define-color background #000080;
+@define-color accent #0000ff;
+@define-color accent_orange #0000ff;
+@define-color accent_green #008080;
+@define-color accent_critical #ff0000;
 
 * {
   border-radius: 0;
@@ -13,7 +13,7 @@
 window#waybar {
   background: @background;
   color: @foreground;
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid #000000;
 }
 
 #workspaces button {
@@ -24,13 +24,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background: #000080;
-  color: #fefefe;
-  border: 2px solid #1e1e1e;
+  background: #c0c0c0;
+  color: #000080;
+  border: 2px solid #000000;
 }
 
 #workspaces button:hover {
-  background: #d45bb6;
+  background: #0000ff;
   color: #fefefe;
 }
 
@@ -50,6 +50,6 @@ window#waybar {
 
 #battery.critical,
 #network.disconnected {
-  color: #c45c78;
-  background: #fefefe;
+  color: #ffff00;
+  background: #800000;
 }

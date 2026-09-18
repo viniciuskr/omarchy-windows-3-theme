@@ -1,11 +1,11 @@
 # Windows 3 — btop
-# TypeSafe pink / teal / magenta on off-white.
+# VGA navy / teal / magenta on off-white.
 
 theme[main_bg]="#fefefe"
 theme[main_fg]="#1e1e1e"
 theme[title]="#000080"
 theme[hi_fg]="#09aea1"
-theme[selected_bg]="#d45bb6"
+theme[selected_bg]="#000080"
 theme[selected_fg]="#fefefe"
 theme[inactive_fg]="#858585"
 theme[graph_text]="#1e1e1e"
@@ -14,42 +14,42 @@ theme[proc_misc]="#09aea1"
 
 theme[cpu_box]="#000080"
 theme[mem_box]="#09aea1"
-theme[net_box]="#ff80c0"
-theme[proc_box]="#d45bb6"
+theme[net_box]="#0000ff"
+theme[proc_box]="#800080"
 theme[div_line]="#c0c0c0"
 
 theme[temp_start]="#03aa5c"
 theme[temp_mid]="#c9a227"
-theme[temp_end]="#c45c78"
+theme[temp_end]="#800000"
 
 theme[cpu_start]="#09aea1"
 theme[cpu_mid]="#000080"
-theme[cpu_end]="#d45bb6"
+theme[cpu_end]="#0000ff"
 
 theme[free_start]="#03aa5c"
 theme[free_mid]="#09aea1"
 theme[free_end]="#000080"
 
 theme[cached_start]="#09aea1"
-theme[cached_mid]="#d45bb6"
-theme[cached_end]="#ff80c0"
+theme[cached_mid]="#0000ff"
+theme[cached_end]="#000080"
 
 theme[available_start]="#abbab9"
 theme[available_mid]="#09aea1"
 theme[available_end]="#03aa5c"
 
-theme[used_start]="#ff80c0"
-theme[used_mid]="#d45bb6"
-theme[used_end]="#c45c78"
+theme[used_start]="#000080"
+theme[used_mid]="#0000ff"
+theme[used_end]="#800000"
 
 theme[download_start]="#03aa5c"
 theme[download_mid]="#09aea1"
 theme[download_end]="#000080"
 
-theme[upload_start]="#ff80c0"
-theme[upload_mid]="#d45bb6"
-theme[upload_end]="#c45c78"
+theme[upload_start]="#000080"
+theme[upload_mid]="#800080"
+theme[upload_end]="#800000"
 
 theme[process_start]="#09aea1"
 theme[process_mid]="#000080"
-theme[process_end]="#d45bb6"
+theme[process_end]="#0000ff"
