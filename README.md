@@ -1,6 +1,6 @@
 # Windows 3 — Omarchy theme
 
-A light Omarchy theme that restyles the desktop after [TypeSafe AI](https://typesafe.ai/): pink VGA wallpaper, navy title bars, teal accents, magenta selection, and the hard-edged chrome of Windows 3.1.
+A light Omarchy theme that restyles the desktop after [TypeSafe AI](https://typesafe.ai/) with Windows 3.1 VGA color: system pink wallpaper (`#ff80c0`), navy title bars, teal accents, magenta selection, and hard-edged chrome.
 
 The theme follows the same file layout as community themes such as Black_Arch (`colors.toml`, terminal configs, Waybar, Walker, GTK, Hyprland, Neovim, wallpapers) and adds Omarchy 3 files (`shell.toml`, `hyprland.lua`, `light.mode`).
 
@@ -10,7 +10,7 @@ The theme follows the same file layout as community themes such as Black_Arch (`
 
 | Token | Hex | Role |
 | --- | --- | --- |
-| Pink | `#f386a1` | Desktop, bar, TypeSafe page color |
+| Pink | `#ff80c0` | Desktop, bar — Windows 3.1 system pink |
 | Off-white | `#fefefe` | Window interiors, terminals, editors |
 | Silver | `#c0c0c0` | Dialogs, menus, Win31 face |
 | Navy | `#000080` | Active title bars, keywords |

@@ -2,7 +2,7 @@
 # TypeSafe pink chrome, Win31 square cards, magenta selection.
 
 [bar]
-background = "#f386a1"
+background = "#ff80c0"
 background-alpha = 1.0
 text = "#1e1e1e"
 active = "#d45bb6"
@@ -80,7 +80,7 @@ text = "#1e1e1e"
 border = "#1e1e1e"
 border-alpha = 1.0
 border-width = 3
-scrim = "#f386a1"
+scrim = "#ff80c0"
 scrim-alpha = 0.45
 selected-background = "#d45bb6"
 selected-background-alpha = 1.0
@@ -95,7 +95,7 @@ text = "#1e1e1e"
 border = "#1e1e1e"
 border-alpha = 1.0
 border-width = 3
-scrim = "#f386a1"
+scrim = "#ff80c0"
 scrim-alpha = 0.45
 selected-background = "#000080"
 selected-background-alpha = 1.0
@@ -111,7 +111,7 @@ text-error = "#c45c78"
 border = "#1e1e1e"
 border-error = "#c45c78"
 border-alpha = 1.0
-scrim = "#f386a1"
+scrim = "#ff80c0"
 scrim-alpha = 0.5
 accent = "#09aea1"
 
@@ -129,7 +129,7 @@ selection = "#d45bb6"
 selection-alpha = 1.0
 
 [image-picker]
-scrim = "#f386a1"
+scrim = "#ff80c0"
 scrim-alpha = 0.55
 text = "#1e1e1e"
 selected-border = "#1e1e1e"

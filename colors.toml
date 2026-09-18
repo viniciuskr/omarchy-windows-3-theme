@@ -1,5 +1,5 @@
 # Windows 3 — Omarchy theme
-# Palette from typesafe.ai (Windows 3.1 chrome, TypeSafe pink desktop)
+# Palette from typesafe.ai chrome + Windows 3.1 VGA pink desktop
 
 mode = "light"
 
@@ -8,8 +8,8 @@ selection = "#d45bb6"
 muted = "#858585"
 
 background = "#fefefe"
-dark_background = "#f5e6ea"
-darker_background = "#ebcfd6"
+dark_background = "#ffe4f0"
+darker_background = "#f5bdd8"
 lighter_background = "#ffffff"
 
 foreground = "#1e1e1e"
@@ -19,14 +19,14 @@ bright_foreground = "#1e1e1e"
 
 red = "#c45c78"
 yellow = "#c9a227"
-orange = "#f386a1"
+orange = "#ff80c0"
 green = "#03aa5c"
 cyan = "#09aea1"
 blue = "#000080"
 magenta = "#d45bb6"
 brown = "#8a4a5a"
 
-bright_red = "#f386a1"
+bright_red = "#ff80c0"
 bright_yellow = "#e0c04a"
 bright_green = "#14c46e"
 bright_cyan = "#1bc4b6"
@@ -34,7 +34,7 @@ bright_blue = "#1e1e9a"
 bright_magenta = "#e070c4"
 
 # Extra tokens for hand-written configs
-pink = "#f386a1"
+pink = "#ff80c0"
 navy = "#000080"
 silver = "#c0c0c0"
 sage = "#abbab9"
@@ -55,7 +55,7 @@ color5  = "#d45bb6"
 color6  = "#09aea1"
 color7  = "#c0c0c0"
 color8  = "#858585"
-color9  = "#f386a1"
+color9  = "#ff80c0"
 color10 = "#14c46e"
 color11 = "#e0c04a"
 color12 = "#1e1e9a"

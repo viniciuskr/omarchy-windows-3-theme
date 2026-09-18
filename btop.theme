@@ -14,7 +14,7 @@ theme[proc_misc]="#09aea1"
 
 theme[cpu_box]="#000080"
 theme[mem_box]="#09aea1"
-theme[net_box]="#f386a1"
+theme[net_box]="#ff80c0"
 theme[proc_box]="#d45bb6"
 theme[div_line]="#c0c0c0"
 
@@ -32,13 +32,13 @@ theme[free_end]="#000080"
 
 theme[cached_start]="#09aea1"
 theme[cached_mid]="#d45bb6"
-theme[cached_end]="#f386a1"
+theme[cached_end]="#ff80c0"
 
 theme[available_start]="#abbab9"
 theme[available_mid]="#09aea1"
 theme[available_end]="#03aa5c"
 
-theme[used_start]="#f386a1"
+theme[used_start]="#ff80c0"
 theme[used_mid]="#d45bb6"
 theme[used_end]="#c45c78"
 
@@ -46,7 +46,7 @@ theme[download_start]="#03aa5c"
 theme[download_mid]="#09aea1"
 theme[download_end]="#000080"
 
-theme[upload_start]="#f386a1"
+theme[upload_start]="#ff80c0"
 theme[upload_mid]="#d45bb6"
 theme[upload_end]="#c45c78"
 

@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 BG = ROOT / "backgrounds"
 
-PINK = (243, 134, 161)
+PINK = (255, 128, 192)  # Windows 3.1 system pink #ff80c0
 WHITE = (254, 254, 254)
 NEAR_WHITE = (255, 255, 255)
 DARK = (30, 30, 30)
@@ -177,7 +177,7 @@ def win31_window(
 def wallpaper_typesafe_desktop() -> Image.Image:
     img = Image.new("RGB", (W, H), PINK)
     # Subtle VGA-style dither toward a slightly deeper pink.
-    overlay = dither((W, H), PINK, (232, 112, 148), scale=2)
+    overlay = dither((W, H), PINK, (192, 64, 128), scale=2)
     return Image.blend(img, overlay, 0.18)
 
 

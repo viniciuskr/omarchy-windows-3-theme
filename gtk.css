@@ -9,14 +9,14 @@
     @define-color cyan           #09aea1;
     @define-color white          #fefefe;
     @define-color bright_black   #858585;
-    @define-color bright_red     #f386a1;
+    @define-color bright_red     #ff80c0;
     @define-color bright_green   #14c46e;
     @define-color bright_yellow  #e0c04a;
     @define-color bright_blue    #1e1e9a;
     @define-color bright_magenta #e070c4;
     @define-color bright_cyan    #1bc4b6;
     @define-color bright_white   #ffffff;
-    @define-color pink           #f386a1;
+    @define-color pink           #ff80c0;
     @define-color silver         #c0c0c0;
 
     @define-color accent_bg_color @cyan;
