@@ -23,10 +23,10 @@ The theme follows the same file layout as community themes such as Black_Arch (`
 ## Install
 
 ```sh
-omarchy-theme-install https://github.com/<user>/omarchy-windows-3-theme.git
+omarchy-theme-install https://github.com/viniciuskr/omarchy-windows-3-theme.git
 ```
 
-Replace the URL with this repository once it is on GitHub (or any other git host). From the Omarchy menu: **Install → Style → Theme**, then paste the same URL.
+From the Omarchy menu: **Install → Style → Theme**, then paste the same URL.
 
 After install, pick **Windows 3** in the theme selector (`Super + Ctrl + Shift + Space`).
 
