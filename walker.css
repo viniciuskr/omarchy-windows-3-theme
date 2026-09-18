@@ -1,0 +1,53 @@
+@define-color selected-text #fefefe;
+@define-color text #1e1e1e;
+@define-color base #c0c0c0;
+@define-color border #1e1e1e;
+@define-color foreground #1e1e1e;
+@define-color background #c0c0c0;
+@define-color accent #09aea1;
+
+window .box-wrapper {
+  background: @background;
+  padding: 8px;
+  color: @text;
+  border: 3px solid @border;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: 4px 4px 0 #000000;
+}
+
+window .search-container {
+  background: #fefefe;
+  border: 2px solid #808080;
+  color: @text;
+  border-radius: 0;
+}
+
+window .placeholder {
+  opacity: 0.55;
+  color: #858585;
+}
+
+window .input {
+  color: @text;
+  padding: 0;
+  font-weight: 600;
+}
+
+child {
+  padding: 2px 8px;
+  background: transparent;
+  border-radius: 0;
+  border-left: 0px solid transparent;
+}
+
+child:hover {
+  background: #09aea1;
+  color: #fefefe;
+}
+
+child:selected {
+  background: #000080;
+  color: #fefefe;
+  border-radius: 0;
+}

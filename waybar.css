@@ -1,0 +1,55 @@
+@define-color foreground #1e1e1e;
+@define-color background #f386a1;
+@define-color accent #09aea1;
+@define-color accent_orange #d45bb6;
+@define-color accent_green #03aa5c;
+@define-color accent_critical #c45c78;
+
+* {
+  border-radius: 0;
+  font-weight: 600;
+}
+
+window#waybar {
+  background: @background;
+  color: @foreground;
+  border-bottom: 2px solid #1e1e1e;
+}
+
+#workspaces button {
+  color: @foreground;
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 0 8px;
+}
+
+#workspaces button.active {
+  background: #000080;
+  color: #fefefe;
+  border: 2px solid #1e1e1e;
+}
+
+#workspaces button:hover {
+  background: #d45bb6;
+  color: #fefefe;
+}
+
+#clock,
+#battery,
+#cpu,
+#network,
+#pulseaudio,
+#bluetooth,
+#tray,
+#custom-omarchy,
+#custom-update,
+#custom-weather {
+  color: @foreground;
+  padding: 0 10px;
+}
+
+#battery.critical,
+#network.disconnected {
+  color: #c45c78;
+  background: #fefefe;
+}

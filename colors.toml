@@ -1,0 +1,64 @@
+# Windows 3 — Omarchy theme
+# Palette from typesafe.ai (Windows 3.1 chrome, TypeSafe pink desktop)
+
+mode = "light"
+
+accent = "#09aea1"
+selection = "#d45bb6"
+muted = "#858585"
+
+background = "#fefefe"
+dark_background = "#f5e6ea"
+darker_background = "#ebcfd6"
+lighter_background = "#ffffff"
+
+foreground = "#1e1e1e"
+dark_foreground = "#858585"
+light_foreground = "#1e1e1e"
+bright_foreground = "#1e1e1e"
+
+red = "#c45c78"
+yellow = "#c9a227"
+orange = "#f386a1"
+green = "#03aa5c"
+cyan = "#09aea1"
+blue = "#000080"
+magenta = "#d45bb6"
+brown = "#8a4a5a"
+
+bright_red = "#f386a1"
+bright_yellow = "#e0c04a"
+bright_green = "#14c46e"
+bright_cyan = "#1bc4b6"
+bright_blue = "#1e1e9a"
+bright_magenta = "#e070c4"
+
+# Extra tokens for hand-written configs
+pink = "#f386a1"
+navy = "#000080"
+silver = "#c0c0c0"
+sage = "#abbab9"
+
+hyprland_active_border = "#1e1e1e"
+hyprland_inactive_border = "#808080"
+
+cursor = "#1e1e1e"
+selection_foreground = "#fefefe"
+selection_background = "#d45bb6"
+
+color0  = "#1e1e1e"
+color1  = "#c45c78"
+color2  = "#03aa5c"
+color3  = "#c9a227"
+color4  = "#000080"
+color5  = "#d45bb6"
+color6  = "#09aea1"
+color7  = "#c0c0c0"
+color8  = "#858585"
+color9  = "#f386a1"
+color10 = "#14c46e"
+color11 = "#e0c04a"
+color12 = "#1e1e9a"
+color13 = "#e070c4"
+color14 = "#1bc4b6"
+color15 = "#1e1e1e"
